@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/styles.css">
+	<link rel="img" href="./img/logo_icon_neg.svg">
+    <title>Digidata Automação</title>
+</head>
+<body class="body">
+        <section class="contato" id="contato">
+            <h2 class="contato__titulo">Contato</h2>
+            <form id="contato_form" class="contato_form">
+				<label for="nomesobrenome" class="contato_label">Nome completo</label>
+				<input type="text" id="nomesobrenome" class="input-padrao" required>
+
+				<label for="email" class="contato_label">Email</label>
+				<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+				<label for="telefone" class="contato_label">Telefone</label>
+				<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+				<label for="mensagem" class="contato_label">Mensagem</label>
+				<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+				<fieldset class="contato__radio">
+					<legend class="contato_label">Como prefere o nosso contato?</legend>
+					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+
+					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+
+					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
+				</fieldset>
+
+				<fieldset>
+					<legend class="contato_label" >Qual horário prefere ser atendido?</legend>
+					<select class="contato__turno">
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+					</select>
+				</fieldset>
+
+				<label class="contato__checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+				<input type="submit" value="Enviar formulário" class="contato_botao-enviar">
+			</form>
+        </section>
+        <footer class="rodape">
+			<h2 class="rodape__texto">Formulário aula 3 - Awari</h2>
+		</footer>
+		<script type="text/javascript" src="./index.js"></script>
+    </Main>
+</body>
+</html>
